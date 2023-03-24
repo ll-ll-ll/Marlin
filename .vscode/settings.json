@@ -1,0 +1,4 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/buildroot/share/cmake",
+    "cmake.configureOnOpen": true
+}
