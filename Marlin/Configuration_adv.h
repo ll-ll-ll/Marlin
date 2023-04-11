@@ -3729,6 +3729,7 @@
  * Execute certain G-code commands immediately after power-on.
  */
 //#define STARTUP_COMMANDS "G28 XY\nM117 Check probe!\nG28 Z\nG0 X164 Y-9 Z15\nG0 X167 Y-12\nG0 Z7.05\nG0 Z15\nG0 X164 Y-9 Z15\nG0 X76 Y182\nM117 Ready..."
+#define STARTUP_COMMANDS "G28"; // auto-home on power-up with z-probing for z-min
 
 /**
  * G-code Macros
