@@ -941,7 +941,7 @@ G29_TYPE GcodeSuite::G29() {
 
   TERN_(HAS_BED_PROBE, probe.move_z_after_probing());
 
-  #ifdef Z_PROBE_END_SCRIPT
+  #ifdef Z__SCRIPT
     if (DEBUGGING(LEVELING)) DEBUG_ECHOLNPGM("Z Probe End Script: ", Z_PROBE_END_SCRIPT);
     planner.synchronize();
     process_subcommands_now(F(Z_PROBE_END_SCRIPT));
