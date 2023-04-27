@@ -1233,7 +1233,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 40, 40, 1280, 1760 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 640, 1760 }
 
 /**
  * Default Max Feed Rate (linear=mm/s, rotational=°/s)
@@ -1570,7 +1570,7 @@
  * A switch indicating proper deployment, or an optical
  * switch triggered when the carriage is near the bed.
  */
-#define PROBE_ACTIVATION_SWITCH
+//#define PROBE_ACTIVATION_SWITCH
 #if ENABLED(PROBE_ACTIVATION_SWITCH)
   #define PROBE_ACTIVATION_SWITCH_STATE LOW // State indicating probe is active
   #define PROBE_ACTIVATION_SWITCH_PIN 19 // Override default pin
@@ -1596,7 +1596,7 @@
  * Probe Enable / Disable
  * The probe only provides a triggered signal when enabled.
  */
-#define PROBE_ENABLE_DISABLE
+//#define PROBE_ENABLE_DISABLE
 #if ENABLED(PROBE_ENABLE_DISABLE)
   //#define PROBE_ENABLE_PIN -1   // Override the default pin here
 #endif
